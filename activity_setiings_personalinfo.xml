@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homescreen_bg"
+    tools:context=".HomeScreen">
+
+
+    <TextView
+        android:layout_width="272dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="607dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/personal_info"
+        android:textColor="#232020"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="359dp"
+        android:layout_height="491dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="46dp"
+        app:cardBackgroundColor="@drawable/homescreen_bg"
+        app:cardCornerRadius="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/enter_your_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text="@string/name"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="@string/done"
+                android:background="@color/black"
+                app:cornerRadius="30dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
